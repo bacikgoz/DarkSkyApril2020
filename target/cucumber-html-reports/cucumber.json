@@ -1,0 +1,160 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3824653336,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on DarkSky Home Page",
+            "match": {
+              "location": "DarkSkySD.setup()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4115022853,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.setup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Verify timeline is displayed in correct format",
+        "description": "",
+        "id": "verify-darksky;verify-timeline-is-displayed-in-correct-format",
+        "after": [
+          {
+            "result": {
+              "duration": 152954796,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 56334972152,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify timeline is displayed with two hours incremented",
+            "match": {
+              "location": "DarkSkySD.verifyTimes()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@temptimeline-1"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3515297316,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on DarkSky Home Page",
+            "match": {
+              "location": "DarkSkySD.setup()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2347604645,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify individual day temp timeline",
+        "description": "",
+        "id": "verify-darksky;verify-individual-day-temp-timeline",
+        "after": [
+          {
+            "result": {
+              "duration": 162974790,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 41271241968,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I verify the lowest and the highest temp is displayed correctly",
+            "match": {
+              "location": "DarkSkySD.verifyTemps()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@individualtemptimeline"
+          }
+        ]
+      }
+    ],
+    "name": "Verify DarkSky",
+    "description": "",
+    "id": "verify-darksky",
+    "keyword": "Feature",
+    "uri": "DarkSky.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@web"
+      }
+    ]
+  }
+]
